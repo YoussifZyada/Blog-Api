@@ -17,4 +17,8 @@ router.post("/", protect, createPost);
 router.put("/:id", protect, updatePost);
 router.delete("/:id", protect, deletePost);
 
+// Private interactions
+router.post("/:id/like", protect, likePost);
+router.post("/:id/share", protect, sharePost);
+
 export default router;
