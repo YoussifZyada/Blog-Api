@@ -21,4 +21,7 @@ router.delete("/:id", protect, deletePost);
 router.post("/:id/like", protect, likePost);
 router.post("/:id/share", protect, sharePost);
 
+router.post("/:id/like", protect, likePost);
+router.post("/:id/share", protect, sharePost);
+
 export default router;
