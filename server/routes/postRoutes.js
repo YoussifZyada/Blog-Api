@@ -4,6 +4,8 @@ import {
   getPosts,
   deletePost,
   updatePost,
+  likePost,
+  sharePost,
 } from "../controllers/postController.js";
 import { protect } from "../middleware/authMiddleware.js";
 
@@ -18,9 +20,6 @@ router.put("/:id", protect, updatePost);
 router.delete("/:id", protect, deletePost);
 
 // Private interactions
-router.post("/:id/like", protect, likePost);
-router.post("/:id/share", protect, sharePost);
-
 router.post("/:id/like", protect, likePost);
 router.post("/:id/share", protect, sharePost);
 
