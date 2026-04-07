@@ -17,12 +17,12 @@ const Navbar = () => {
     <AppBar position="sticky" elevation={0} sx={{ background: '#0a0a0a', borderBottom: '1px solid #2a2a2a' }}>
       <Toolbar sx={{ maxWidth: 1200, width: '100%', mx: 'auto' }}>
         <Typography
-          variant="h5"
+          variant="h4"
           component={Link}
           to="/"
-          sx={{ flexGrow: 1, textDecoration: 'none', color: '#ff6b00', fontWeight: 'bold', letterSpacing: 1 }}
+          sx={{ flexGrow: 1, textDecoration: 'none', color: '#ff6b00', fontWeight: 'bold', letterSpacing: 4, fontFamily: 'monospace' }}
         >
-          BlogApp
+          ECHO
         </Typography>
         {user ? (
           <Box display="flex" gap={2} alignItems="center">

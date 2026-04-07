@@ -97,7 +97,7 @@ const HomePage = () => {
             }}
           >
             <Typography variant="h6" sx={{ color: '#b0b0b0' }}>
-              Welcome to BlogApp! Please{' '}
+              Welcome to ECHO! Please{' '}
               <a href="/login" style={{ color: '#ff6b00' }}>login</a> or{' '}
               <a href="/register" style={{ color: '#ff6b00' }}>register</a> to create posts.
             </Typography>
